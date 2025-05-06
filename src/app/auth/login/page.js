@@ -20,8 +20,7 @@ export default function LoginPage() {
     if (error) {
       setError(error.message);
     } else {
-      const redirect = searchParams.get("redirect") || "/";
-      router.replace(redirect);
+      router.replace("/");
     }
   };
 
